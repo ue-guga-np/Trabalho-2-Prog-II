@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uenp.maquinacoxinhas.TelaPrincipalController">
+   <children>
+      <Label layoutX="60.0" layoutY="287.0" text="Quantidade de coxinhas disponíveis:" />
+      <Button layoutX="437.0" layoutY="275.0" mnemonicParsing="false" onAction="#abastecer" text="Abastecer" />
+      <Button layoutX="360.0" layoutY="122.0" mnemonicParsing="false" onAction="#comprarVarias" text="Comprar" />
+      <Label layoutX="60.0" layoutY="93.0" text="Comprar 1x coxinha:" />
+      <Label layoutX="60.0" layoutY="304.0" text="Preço da unidade:" />
+      <Label layoutX="60.0" layoutY="126.0" text="Comprar quantidade específica de coxinhas: " />
+      <TextField fx:id="campoQuantidadeComprar" layoutX="301.0" layoutY="122.0" prefHeight="25.0" prefWidth="44.0" />
+      <Button layoutX="437.0" layoutY="309.0" mnemonicParsing="false" onAction="#zerar" text="Zerar" />
+      <Label layoutX="60.0" layoutY="322.0" text="Total de coxinhas vendidas:" />
+      <Label layoutX="177.0" layoutY="26.0" text="Máquina de Coxinhas">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="341.0" text="Total de dinheiro arrecadado:" />
+      <Button layoutX="185.0" layoutY="89.0" mnemonicParsing="false" onAction="#comprar1" text="Comprar" />
+      <Label fx:id="labelQtdCoxinhas" layoutX="259.0" layoutY="288.0" prefHeight="17.0" prefWidth="63.0" />
+      <Label fx:id="labelPreco" layoutX="159.0" layoutY="305.0" prefHeight="17.0" prefWidth="52.0" />
+      <Label fx:id="labelTotalVendido" layoutX="215.0" layoutY="323.0" prefHeight="17.0" prefWidth="52.0" />
+      <Label fx:id="labelTotalArrecadado" layoutX="222.0" layoutY="342.0" prefHeight="17.0" prefWidth="63.0" />
+      <TextField fx:id="campoAbastecimento" layoutX="529.0" layoutY="275.0" prefHeight="25.0" prefWidth="44.0" />
+   </children>
+</AnchorPane>
